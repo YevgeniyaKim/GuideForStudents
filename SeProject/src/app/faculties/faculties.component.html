@@ -1,0 +1,8 @@
+<div class="main">
+  <h1>Faculties</h1>
+  <div class="faculties" *ngFor = "let fac of faculties">
+    <a routerLink="/categories/{{fac.category_name}}/{{fac.id}}">
+      {{fac.name}}
+    </a>
+  </div>
+</div>
