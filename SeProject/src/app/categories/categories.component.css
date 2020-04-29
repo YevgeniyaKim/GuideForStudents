@@ -1,0 +1,21 @@
+.books-category-inside {
+  display: flex;
+  align-content: center;
+  margin: 10px;
+}
+
+.books-category-inside img{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  padding: 5px;
+}
+
+.category-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.strelochka {
+  margin: auto;
+}
