@@ -6,16 +6,21 @@ import {OrganisationsComponent} from './organisations/organisations.component';
 import {MapComponent} from './map/map.component';
 import {FacultiesComponent} from './faculties/faculties.component';
 import {ContactUsComponent} from './contact-us/contact-us.component';
+import {FacultyDetailsComponent} from './faculty-details/faculty-details.component';
+import {OrganisationDetailsComponent} from './organisation-details/organisation-details.component';
 
 
 const routes: Routes = [
   {path: 'welcome', component: WelcomeComponent},
   {path: '', redirectTo: '/welcome', pathMatch: 'full'},
   {path: 'categories', component: CategoriesComponent},
-  {path: 'faculties', component: FacultiesComponent},
-  {path: 'organisations', component: OrganisationsComponent},
-  {path: 'map', component: MapComponent},
-  {path: 'contact', component: ContactUsComponent},
+  {path: 'categories/:categoryId/faculties', component: FacultiesComponent},
+  {path: 'categories/:categoryId/faculties/:id', component: FacultyDetailsComponent},
+  // {path: 'organisations', component: OrganisationsComponent},
+  // {path: 'organisations/:id', component: OrganisationDetailsComponent}
+  // {path: 'map', component: MapComponent},
+  // {path: 'contact', component: ContactUsComponent},
+
 ];
 
 @NgModule({

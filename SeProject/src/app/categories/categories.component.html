@@ -1,8 +1,12 @@
 <div class="main">
   <h1>Categories</h1>
   <div class="books-category-inside" *ngFor = "let cat of categories">
-    <a routerLink="/categories/{{ cat.name }}/">
+    <a routerLink="/categories/{{ cat.id }}/faculties">
       {{cat.name}}
     </a>
   </div>
+<!--  <ul class="nav_links" >-->
+<!--    <li><a routerLink="/faculties">Faculties</a></li>-->
+<!--&lt;!&ndash;    <li><a routerLink="/comics">Комикс</a></li>&ndash;&gt;-->
+<!--  </ul>-->
 </div>

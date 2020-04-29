@@ -9,6 +9,8 @@ import { FacultiesComponent } from './faculties/faculties.component';
 import { MapComponent } from './map/map.component';
 import { OrganisationsComponent } from './organisations/organisations.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FacultyDetailsComponent } from './faculty-details/faculty-details.component';
+import { OrganisationDetailsComponent } from './organisation-details/organisation-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     FacultiesComponent,
     MapComponent,
     OrganisationsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    FacultyDetailsComponent,
+    OrganisationDetailsComponent
   ],
   imports: [
     BrowserModule,

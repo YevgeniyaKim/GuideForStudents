@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Faculty} from '../faculties';
+import {Faculty} from '../models/faculties';
 import {ActivatedRoute} from '@angular/router';
-import {CategoriesService} from '../categories.service';
+import {FacultiesService} from '../services/faculties.service';
 
 @Component({
   selector: 'app-faculties',
@@ -11,21 +11,21 @@ import {CategoriesService} from '../categories.service';
 export class FacultiesComponent implements OnInit {
 
   faculties: Faculty[];
-  name;
+  id;
 
-  constructor(private route: ActivatedRoute, private service: CategoriesService) { }
+  constructor(private route: ActivatedRoute, private service: FacultiesService) { }
 
   ngOnInit(): void {
-    this.getId();
-    this.getFacultyByName();
+    this.getCategoryId();
+    this.getFaculties();
   }
 
-  getId(): void{
-    this.name = this.route.snapshot.paramMap.get('category_name');
+  getCategoryId():void{
+    this.id = +this.route.snapshot.paramMap.get('categoryId');
   }
 
-  getFacultyByName(): void {
-    this.service.getFacultyByName(this.name)
+  public getFaculties() {
+    this.service.getFaculties(this.id)
       .subscribe(faculties => this.faculties = faculties);
   }
 
