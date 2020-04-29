@@ -1,7 +1,7 @@
 <div class="main">
   <h1>Categories</h1>
   <div class="books-category-inside" *ngFor = "let cat of categories">
-    <a routerLink="/categories/{{ cat.id }}/faculties">
+    <a routerLink="{{cat.link}}">
       {{cat.name}}
     </a>
   </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Organisation} from '../models/organisations';
 import {ActivatedRoute} from '@angular/router';
 import {FacultiesService} from '../services/faculties.service';
@@ -12,13 +12,15 @@ import {OrganisationsService} from '../services/organisations.service';
 export class OrganisationDetailsComponent implements OnInit {
 
   org: Organisation;
-  constructor(private route: ActivatedRoute, private service: OrganisationsService) { }
+
+  constructor(private route: ActivatedRoute, private service: OrganisationsService) {
+  }
 
   ngOnInit(): void {
     this.getOrganisation();
   }
 
-  getOrganisation(){
+  getOrganisation() {
     const id = +this.route.snapshot.paramMap.get('id');
     this.service.getOrganisation(id).subscribe(org => this.org = org);
   };
