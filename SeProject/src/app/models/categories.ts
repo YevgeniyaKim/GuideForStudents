@@ -1,26 +1,26 @@
 export interface Category {
-  id: number;
   name: string;
+  link: string;
 }
 
 export const categories: Category[] = [
   {
-    id: 1,
     name: 'Faculties',
+    link: '/faculties'
   },
 
   {
-    id: 2,
     name: 'Organisations',
+    link: '/organisations'
   },
 
   {
-    id: 3,
     name: 'Map',
+    link: '/map'
   },
 
   {
-    id: 4,
     name: 'Contact us',
+    link: '/contacts'
   }
 ];

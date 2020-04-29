@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
 import {WelcomeComponent} from './welcome/welcome.component';
 import {CategoriesComponent} from './categories/categories.component';
 import {OrganisationsComponent} from './organisations/organisations.component';
@@ -14,17 +14,17 @@ const routes: Routes = [
   {path: 'welcome', component: WelcomeComponent},
   {path: '', redirectTo: '/welcome', pathMatch: 'full'},
   {path: 'categories', component: CategoriesComponent},
-  {path: 'categories/:categoryId/faculties', component: FacultiesComponent},
-  {path: 'categories/:categoryId/faculties/:id', component: FacultyDetailsComponent},
-  // {path: 'organisations', component: OrganisationsComponent},
-  // {path: 'organisations/:id', component: OrganisationDetailsComponent}
-  // {path: 'map', component: MapComponent},
-  // {path: 'contact', component: ContactUsComponent},
-
+  {path: 'faculties', component: FacultiesComponent},
+  {path: 'faculties/:id', component: FacultyDetailsComponent},
+  {path: 'organisations', component: OrganisationsComponent},
+  {path: 'organisations/:id', component: OrganisationDetailsComponent},
+  {path: 'map', component: MapComponent},
+  {path: 'contacts', component: ContactUsComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

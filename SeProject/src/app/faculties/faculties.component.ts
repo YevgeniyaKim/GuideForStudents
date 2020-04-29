@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Faculty} from '../models/faculties';
 import {ActivatedRoute} from '@angular/router';
 import {FacultiesService} from '../services/faculties.service';
@@ -13,14 +13,15 @@ export class FacultiesComponent implements OnInit {
   faculties: Faculty[];
   id;
 
-  constructor(private route: ActivatedRoute, private service: FacultiesService) { }
+  constructor(private route: ActivatedRoute, private service: FacultiesService) {
+  }
 
   ngOnInit(): void {
     this.getCategoryId();
     this.getFaculties();
   }
 
-  getCategoryId():void{
+  getCategoryId(): void {
     this.id = +this.route.snapshot.paramMap.get('categoryId');
   }
 
