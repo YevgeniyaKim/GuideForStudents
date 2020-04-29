@@ -1,8 +1,19 @@
 <div class="main">
-  <h1>Faculties</h1>
+  <a routerLink="/categories"><button id="button"></button></a>
+  <h1 id="headr">Faculties</h1>
   <div class="faculties" *ngFor = "let fac of faculties">
-    <a routerLink="/faculties/{{fac.id}}">
-      {{fac.name}}
-    </a>
+    <div class="faculty-text">
+      <h2>
+        <a routerLink="/faculties/{{fac.id}}">
+          {{fac.name}}
+        </a>
+      </h2>
+      <p>
+        Faculty description
+      </p>
+    </div>
+    <div class="arrow">
+      <h2>></h2>
+    </div>
   </div>
 </div>

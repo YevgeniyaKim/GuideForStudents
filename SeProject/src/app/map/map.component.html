@@ -1,3 +1,17 @@
-<img [src]="imgPath" alt="">
-<button (click)="prev()">-</button>
-<button (click)="next()">+</button>
+<div class="main">
+  <a routerLink="/categories"><button id="button"></button></a>
+  <h1>Map</h1>
+  <div class="icons">
+    <img src="assets/software/Карта/food%20icon.png">
+    <img src="assets/software/Карта/library%20icon.png">
+    <img src="assets/software/Карта/office.png">
+  </div>
+
+  <img id="pic" [src]="imgPath" alt="">
+  <div class="knopki">
+    <button id="prev" (click)="prev()"><<</button>
+
+    <button id="next" (click)="next()">>></button>
+
+  </div>
+</div>

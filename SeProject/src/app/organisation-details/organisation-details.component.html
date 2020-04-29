@@ -1,4 +1,16 @@
-<div *ngIf="org">
-  <h1>{{org.name}}</h1>
-  <h3>{{org.id}}</h3>
+<!--<div *ngIf="org">-->
+<!--  <h1>{{org.name}}</h1>-->
+<!--  <h3>{{org.id}}</h3>-->
+<!--</div>-->
+<body>
+<div class="all" *ngIf="org">
+
+  <a routerLink="/organisations"><button id="button"></button></a>
+  <a routerLink="{{org.back}}">
+    <img class="back" src="{{org.back}}">
+
+
+  </a>
+
 </div>
+</body>

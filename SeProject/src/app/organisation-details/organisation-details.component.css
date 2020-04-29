@@ -1,0 +1,25 @@
+*{
+  padding:0;
+  margin: 0;
+  font-family: "Roboto Light";
+
+}
+.back{
+  height: 100vh;
+  width: auto;
+
+}
+
+.all{
+  position: relative;
+}
+
+#button{
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 10%;
+  padding: 5% 10%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none !important;
+}

@@ -1,0 +1,93 @@
+*{
+  font-family: "Roboto Light";
+}
+
+img {
+  width: 300px;
+  margin: 7% 7%;
+}
+
+.main {
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100vw;
+
+  margin: 0;
+  padding: 0;
+  background-image: url("src/assets/software/Карта/фон.png");
+  background-color: red;
+  background-repeat: no-repeat;
+
+  background-attachment: scroll;
+  background-position: top;
+
+  background-clip: border-box;
+
+  background-origin: border-box;
+
+  background-size: 100% 100%;
+  color: white;
+}
+
+.back {
+  background: transparent url("src/assets/software/Карта/Стрелка назад.png") no-repeat;
+  background-origin: border-box;
+  border: none !important;
+  margin: auto;
+  margin-top: 5%;
+  margin-left: 5%;
+  padding: 4% 5%;
+}
+#button{
+  background: transparent;
+  background-image: url("src/assets/software/Организации/Стрелка назад.png");
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  border: none !important;
+  margin: auto;
+  margin-top: 5%;
+  margin-left: 5%;
+  padding: 4% 5%;
+
+}
+#pic{
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  padding: 40px 0px 5px 30px;
+}
+.knopki{
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+#prev {
+  background: transparent no-repeat;
+  background-origin: border-box;
+  border: none !important;
+  color: white;
+  font-size: 36px;
+
+}
+
+#next {
+  background: transparent no-repeat;
+  background-origin: border-box;
+  border: none !important;
+  color: white;
+  font-size: 36px;
+}
+
+.icons img {
+  width: 50px;
+  height: 70px;
+  justify-content: space-between;
+}
+
+.icons {
+  margin-left: 45px;
+}

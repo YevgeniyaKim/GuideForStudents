@@ -1,8 +1,31 @@
-<div class="main">
-  <h1>Organisations</h1>
-  <div class="organisations" *ngFor = "let org of organisations">
-    <a routerLink="/organisations/{{org.id}}">
-      {{org.name}}
-    </a>
+<div class="back">
+  <div class="main">
+    <a routerLink="/categories"><button id="button"></button></a>
+    <h1 id="headr" >Organisations</h1>
+    <div class="organisations" *ngFor = "let org of organisations">
+
+      <img src="assets/software/Организации/icon.png">
+
+      <div class="category-text">
+        <h2>
+          <a routerLink="/organisations/{{org.id}}">
+            {{org.name}}
+          </a>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid, amet autem est ex libero omnis rem unde!
+        </p>
+      </div>
+      <div class="strelochka">
+        <h2>></h2>
+      </div>
+
+
+    </div>
+    <!--  <ul class="nav_links" >-->
+    <!--    <li><a routerLink="/faculties">Faculties</a></li>-->
+    <!--&lt;!&ndash;    <li><a routerLink="/comics">Комикс</a></li>&ndash;&gt;-->
+    <!--  </ul>-->
   </div>
 </div>
+

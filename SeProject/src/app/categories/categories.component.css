@@ -1,7 +1,38 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Light";
+}
+
+#headr{
+  margin-top: 8%;
+  margin-left: 5%;
+}
+.back{
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100vw;
+
+  margin: 0;
+  padding: 0;
+  background-color: #1A1A1A;
+  background-repeat: no-repeat;
+
+  background-attachment: scroll;
+  background-position: top;
+
+  background-clip: border-box;
+
+  background-origin: border-box;
+
+  background-size: 100% 100%;
+}
 .books-category-inside {
+
   display: flex;
   align-content: center;
   margin: 10px;
+  margin-top: 15%;
 }
 
 .books-category-inside img{
@@ -12,6 +43,8 @@
 }
 
 .category-text {
+  padding-left: 5%;
+  margin: auto;
   display: flex;
   flex-direction: column;
 }
@@ -19,3 +52,23 @@
 .strelochka {
   margin: auto;
 }
+
+.main{
+  color: white;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
